@@ -34,7 +34,7 @@ avg_tax = df_filtered["Tax 5%"].mean()
 
 col1, col2, col3 = st.columns(3)
 col1.metric("Total Sales", f"${total_sales:,.2f}")
-col2.metric("Avg. Rating", f"{avg_rating} ⭐")
+col2.metric("Avg. Rating", f"{avg_rating}")
 col3.metric("Avg. Tax", f"${avg_tax:.2f}")
 
 # Sales by Product Line
@@ -56,7 +56,7 @@ fig_gender = px.pie(df_filtered, names='Gender', title='Customer Gender Distribu
 st.plotly_chart(fig_gender, use_container_width=True)
 
 # Forecasting with Prophet
-st.subheader("📈 Sales Forecasting (Prophet)")
+st.subheader("Sales Forecasting (Prophet)")
 sales_by_date = df_filtered.groupby('Date')['Total'].sum().reset_index()
 sales_by_date.columns = ['ds', 'y']
 
@@ -86,4 +86,5 @@ numeric_df = df_filtered.select_dtypes(include=[np.number])
 fig_corr = px.imshow(numeric_df.corr(), color_continuous_scale='RdBu_r', title='Correlation Matrix')
 st.plotly_chart(fig_corr, use_container_width=True)
 
-st.success("Dashboard Loaded Successfully ✅")
+st.success("Dashboard Loaded Successfully")
+
