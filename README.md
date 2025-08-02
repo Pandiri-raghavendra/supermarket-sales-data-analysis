@@ -136,8 +136,8 @@ bash
 # Contact
 Developed by : Raghavendra
 Email        : your.email@example.com
-GitHub       :
-LinkedIn     :
+GitHub       : https://github.com/Pandiri-raghavendra/supermarket-sales-data-analysis
+LinkedIn     : https://www.linkedin.com/in/raghava07
 
 
 
