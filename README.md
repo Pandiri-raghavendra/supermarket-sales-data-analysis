@@ -135,7 +135,7 @@ bash
 
 # Contact
 Developed by : Raghavendra
-Email        : your.email@example.com
+Email        : raghavarohit9866@gmail.com
 GitHub       : https://github.com/Pandiri-raghavendra/supermarket-sales-data-analysis
 LinkedIn     : https://www.linkedin.com/in/raghava07
 
