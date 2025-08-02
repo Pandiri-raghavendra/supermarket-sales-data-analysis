@@ -25,7 +25,7 @@ gender = st.sidebar.multiselect("Select Gender", options=df["Gender"].unique(), 
 df_filtered = df[(df["City"].isin(city)) & (df["Gender"].isin(gender))]
 
 # Title
-st.title("🛒 Supermarket Sales Dashboard")
+st.title("Supermarket Sales Dashboard")
 
 # KPIs
 total_sales = df_filtered["Total"].sum()
@@ -87,4 +87,5 @@ fig_corr = px.imshow(numeric_df.corr(), color_continuous_scale='RdBu_r', title='
 st.plotly_chart(fig_corr, use_container_width=True)
 
 st.success("Dashboard Loaded Successfully")
+
 
